@@ -7,10 +7,8 @@ You can use these plugin extensions for modelling multiple (one-to-many) or sing
 
 ![Alt text](http://websemantics.github.io/Image-Select/img/screen-shot.png "Image Select")
 
-We couldn't find any scripts that had this full functionality, so we developed it ourselves on top of Chosen. We built it for Survey tool, SurveyGraph, and decided to share it with the community.
+We couldn't find any scripts that had this full functionality, so we developed it ourselves on top of Chosen. 
 
 Hope you find it helpful, and get back if you have any feedback/improvements.
-
-Have a look
 
 http://websemantics.github.io/Image-Select 

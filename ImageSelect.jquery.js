@@ -21,6 +21,8 @@
         //  Extend the original 'chosen' method to support images
 
         chosen: function(options) {
+            
+            options = options || {};
           
             var html_template = options.html_template || fn_template;
 

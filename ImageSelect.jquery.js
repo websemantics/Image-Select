@@ -150,8 +150,8 @@
                     // _chosen: Object {chosen:Chosen}
                     //      Contains the current instance of Chosen class
                     var lis = $(chosen.container).find('.chosen-drop ul li:not(:has(img))')
-                    var options = chosen.form_field.options;
-
+                    var options = $(chosen.form_field).find('optgroup, option');
+                    
                     for(var i = 0; i < lis.length; i++){
                         var li = lis[i];
                         var option = options[i];

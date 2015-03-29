@@ -1,7 +1,7 @@
 // Image Select, an extention to the Chosen, a Select Box Enhancer for jQuery and Prototype
 // by Adnan Sagar, WebSemantics Inc. http://websemantics.ca & AlterSpark Corp. http://www.alterspark.com/
 //
-// Version 1.0.2
+// Version 1.3
 // Full source at https://github.com/harvesthq/chosen
 // Copyright (c) 2014 WebSemantics http://websemantics.ca
 
@@ -164,7 +164,7 @@
                     }
                 });
               });
-
+            $this.trigger('chosen:hiding_dropdown');
             return ret;
         }
       });

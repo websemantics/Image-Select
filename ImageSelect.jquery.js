@@ -164,7 +164,9 @@
                     }
                 });
               });
-            $this.trigger('chosen:hiding_dropdown');
+            if (typeof $this !== 'undefined') {
+                $this.trigger('chosen:hiding_dropdown');
+            }
             return ret;
         }
       });

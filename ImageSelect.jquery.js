@@ -164,7 +164,9 @@
                     }
                 });
               });
-            $this.trigger('chosen:hiding_dropdown');
+            this.each(function(input_field) {
+              $(this).trigger('chosen:hiding_dropdown');
+            });
             return ret;
         }
       });

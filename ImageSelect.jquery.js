@@ -67,6 +67,9 @@
                         }
                     }
 
+                    $this.on('chosen:filter', function(){
+                      $this.trigger('chosen:showing_dropdown');
+                    });
                });
             });
 
@@ -155,6 +158,12 @@
                     for(var i = 0; i < lis.length; i++){
                         var li = lis[i];
                         var option = options[i];
+
+                        var idx = $(li).attr('data-option-array-index');
+                        if (idx){
+                           option = chosen.form_field.options[chosen.results_data[idx].options_index];
+                        }
+
                         var img_src = $(option).attr('data-img-src');
 
                         if(img_src != undefined){

@@ -28,13 +28,13 @@ Hope you find it helpful, and get back if you have any feedback/improvements.
 - Browse to `index.html` or `example.html`
 
 # Change Log
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this section.
 
 ### [1.4] - 2015-08-18
 #### Changed
-- Use Bower for dependancies.
-- Merged main project and gh-pages into one codebase.
-- Upgrade to latest Chosen library.
+- Use [Bower](http://bower.io/) for dependancies.
+- Merged main project and `gh-pages` into one codebase.
+- Upgrade to latest [Chosen](http://github.com/harvesthq/chosen) library.
 - Support for Left to Right, LTR (i.e. Arabic).
 - Code refactoring to improve quality and ease of contribution.
 - Fixed all known issues
@@ -45,7 +45,4 @@ All notable changes to this project will be documented in this file.
 
 # Related
 Chosen, http://github.com/harvesthq/chosen
-
-
-
 

@@ -1,4 +1,4 @@
-/*
+```
   ___                              ____       _           _   
  |_ _|_ __ ___   __ _  __ _  ___  / ___|  ___| | ___  ___| |_ 
   | || '_ ` _ \ / _` |/ _` |/ _ \ \___ \ / _ \ |/ _ \/ __| __|
@@ -8,7 +8,7 @@
 
  Version 1.4
 
- */
+```
 
 We designed this plugin extension as a humanized UI element for social networking sites that need to faciliate relations between people. Research shows that people are extremely sensitvie to photos of others, so we needed to revamp the traditional UI elements to make them more intuitive and human.
 

@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Image Select by Web Semantics, Inc.</title>
+  
+    <link rel="stylesheet" href="dist/ImageSelect.css">
+    <link rel="stylesheet" href="js/chosen/chosen.min.css">
+    <link rel="stylesheet" href="js/codemirror/lib/codemirror.css">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);dt,strong{font-weight:700}footer,header{float:left;position:fixed}body{padding:50px;font:14px/1.5 Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;color:#777;font-weight:300}h1,h2,h3,h4,h5,h6{color:#222;margin:0 0 20px}dl,ol,p,pre,table,ul{margin:0 0 20px}h1,h2,h3{line-height:1.1}h1{font-size:28px}h2{color:#393939}h3,h4,h5,h6{color:#494949}a{color:#39c;font-weight:400;text-decoration:none}a small{font-size:11px;color:#777;margin-top:-.6em;display:block}dt,th{color:#444}.wrapper{width:860px;margin:0 auto}blockquote{border-left:1px solid #e5e5e5;margin:0;padding:0 0 0 20px;font-style:italic}code,pre{font-family:Monaco,Bitstream Vera Sans Mono,Lucida Console,Terminal;color:#333;font-size:12px}pre{padding:8px 15px;background:#f8f8f8;border:1px solid #e5e5e5;overflow-x:auto}header ul,pre{border-radius:5px}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:5px 10px;border-bottom:1px solid #e5e5e5}img{max-width:100%}header{width:270px}header ul{list-style:none;height:40px;padding:0;background:#eee;background:-moz-linear-gradient(top,#f8f8f8 0,#ddd 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f8f8f8),color-stop(100%,#ddd));background:-webkit-linear-gradient(top,#f8f8f8 0,#ddd 100%);background:-o-linear-gradient(top,#f8f8f8 0,#ddd 100%);background:-ms-linear-gradient(top,#f8f8f8 0,#ddd 100%);background:linear-gradient(top,#f8f8f8 0,#ddd 100%);border:1px solid #d2d2d2;box-shadow:inset #fff 0 1px 0,inset rgba(0,0,0,.03) 0 -1px 0;width:270px}header li{width:89px;float:left;border-right:1px solid #d2d2d2;height:40px}header ul a{line-height:1;font-size:11px;color:#999;display:block;text-align:center;padding-top:6px;height:40px}strong{color:#222}header ul li+li{width:88px;border-left:1px solid #fff}header ul li+li+li{border-right:none;width:89px}header ul a strong{font-size:14px;display:block;color:#222}section{width:500px;float:right;padding-bottom:50px;overflow: hidden;}small{font-size:11px}hr{border:0;background:#e5e5e5;height:1px;margin:0 0 20px}footer{width:270px;bottom:50px}@media print,screen and (max-width:960px){div.wrapper{width:auto;margin:0}footer,header,section{float:none;position:static;width:auto}header{padding-right:320px}section{border:1px solid #e5e5e5;border-width:1px 0;padding:20px 0;margin:0 0 20px}header a small{display:inline}header ul{position:absolute;right:50px;top:52px}}@media print,screen and (max-width:720px){body{word-wrap:break-word}header{padding:0}header p.view,header ul{position:static}code,pre{word-wrap:normal}}@media print,screen and (max-width:480px){body{padding:15px}header ul{display:none}}@media print{body{padding:.4in;font-size:12pt;color:#444}}.logo{margin-top:-60px}.CodeMirror{height:auto!important;}.xml-code,.js-code{font-size:11px}
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46772370-1']);
+  _gaq.push(['_setDomainName', 'websemantics.github.io']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>  
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img class="logo" src="img/logo.png"/>
+        <p><b>Image Select</b> is an extension of <a href="https://github.com/harvesthq/chosen">Chosen</a> a jQuery plugin that makes long, unwieldy select boxes much more user-friendly. </p>
+        <p><img src="img/screen-shot.png"/></p>
+        <p>Image Select provides image support for Single and Multi select HTML tags.</p>
+        <ul>
+          <li><a href="https://github.com/websemantics/Image-Select/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/websemantics/Image-Select/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/websemantics/Image-Select">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+<section>
+  <h3>
+
+<a class="anchor" ><span class="octicon octicon-link"></span></a>Background Story</h3>
+
+<p>We designed this plugin extension as a humanized UI element for social
+networking sites that need to faciliate relations between people. Research
+shows that people are extremely sensitvie to photos of others, so we needed
+to revamp the traditional UI elements to make them more intuitive and human.</p>
+
+<p>You can use these plugin extensions for modelling multiple (one-to-many) or
+single (one-to-one) relations between people.</p>
+
+<p>We couldn't find any scripts that had this full functionality, so we
+designed it ourselves. We built it for our Survey tool, <a href="http://www.surveygraph.com">SurveyGraph</a>, and decided to
+share it with the community.</p> 
+<p>Hope you find it helpful, and get back if you
+have any feedback/improvements.</p>
+
+<h3>
+<a class="anchor" ><span class="octicon octicon-link"></span></a>Multiple Select</h3>
+
+<p>This example shows the Multiple select scenario. </p>
+
+ <select  multiple="multiple" class="my-select">
+     <option data-img-src="img/adnan.png">Adnan Sagar</option> 
+     <option selected="selected" data-img-src="img/rena.png">Rena Cugelman</option> 
+     <option selected="selected" data-img-src="img/tavis.png">Tavis Lochhead</option> 
+     <option data-img-src="img/brian.png">Brain Cugelman</option> 
+ </select>
+
+<br/>
+<br/>
+
+<div class="xml-code"><select  multiple="multiple" class="my-select">
+  <option data-img-src="img/adnan.png">Adnan Sagar</option> 
+  <option data-img-src="img/rena.png" selected="selected">Rena Cugelman</option> 
+  <option data-img-src="img/tavis.png" selected="selected">Tavis Lochhead</option> 
+  <option data-img-src="img/brian.png">Brain Cugelman</option> 
+</select></div>
+<br/>
+<p>As shown above, use <i style="color:red">data-img-src</i> attribute to attache images. Finally, enable <b>Image Select</b> by invoking the "<i>chosen</i>" method on the select element.</p>
+
+<div class="js-code" >
+  $(".my-select").chosen({
+    width:"100%",
+  });
+</div>
+<br/>
+
+<p>For more details check <a href="http://harvesthq.github.io/chosen/">Chosen documentation</a>.</p>
+
+<h3>
+<a class="anchor" ><span class="octicon octicon-link"></span></a>Single Select</h3>
+
+<p>For single select, remove the <i style="color:red">multiple</i> attribute. </p>
+
+ <select class="my-select">
+     <option>Please select, ...</option> 
+     <option data-img-src="img/adnan.png">Adnan Sagar</option> 
+     <option data-img-src="img/rena.png" selected="selected">Rena Cugelman</option> 
+     <option data-img-src="img/tavis.png">Tavis Lochhead</option> 
+     <option data-img-src="img/brian.png">Brain Cugelman</option> 
+ </select>
+
+<br/>
+<br/>
+
+<div class="xml-code"><select class="my-select">
+  <option data-img-src="img/adnan.png">Adnan Sagar</option> 
+  <option selected="selected" data-img-src="img/rena.png">Rena Cugelman</option> 
+  <option data-img-src="img/tavis.png">Tavis Lochhead</option> 
+  <option data-img-src="img/brian.png">Brain Cugelman</option> 
+</select></div>
+<br/>
+<p>Use <i style="color:red">data-img-src</i> attribute to attache images.</p>
+
+<h3>
+<a class="anchor"><span class="octicon octicon-link"></span></a>Custom Style / Markup</h3>
+
+<p><b>Image Select</b> allows the customization of THML markup and styles it uses to insert images. For example, to style the image directly, add your own css classes, or define your own HTML markup which would include the image.</p>
+
+<p>The following example adds a black border to the images.</p>
+
+ <select multiple="multiple" class="my-select-border">
+     <option data-img-src="img/adnan.png">Adnan Sagar</option> 
+     <option data-img-src="img/rena.png">Rena Cugelman</option> 
+     <option selected="selected" data-img-src="img/tavis.png">Tavis Lochhead</option> 
+     <option selected="selected" data-img-src="img/brian.png">Brain Cugelman</option> 
+ </select>
+<br/>
+<br/>
+<p>It simply adds the required css styles directly to the image template</p>
+
+<div class="js-code" >$(".my-select").chosen({
+  width:"100%",
+  html_template: '<img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
+});</div>
+<br/>
+<p>Use the <i style="color:red">html_template</i> to write your own markup. Make sure you always include the two place hodlers <i style="color:red">{class_name}</i> and <i style="color:red">{url}</i>, which are being used internally to insert the approperiate class name, and image url for each options element</p>
+
+<h3>
+<a class="anchor"><span class="octicon octicon-link"></span></a>Right to Left (RTL)</h3>
+
+<p><b>RTL</b> support has been added to <b>Image Select</b> as per version <b>1.4</b>.</p>
+  <select  multiple="multiple" class="my-select chosen-rtl">
+    <option data-img-src="img/adnan.png" selected="selected">عدنان صقر</option> 
+    <option data-img-src="img/rena.png" selected="selected">رينا كوقلمان</option> 
+    <option data-img-src="img/tavis.png">تافس لوكهيد</option> 
+    <option data-img-src="img/brian.png">براين كوقلمان</option> 
+  </select>
+<br/>
+<br/>
+<p>Add class <i style="color:red">chosen-rtl</i> to the select element to enable RTL.</p>
+
+<div class="xml-code"><select  multiple="multiple" class="my-select chosen-rtl">
+  <option data-img-src="img/adnan.png" selected="selected">عدنان صقر</option> 
+  <option data-img-src="img/rena.png" selected="selected">رينا كوقلمان</option> 
+  <option data-img-src="img/tavis.png">تافس لوكهيد</option> 
+  <option data-img-src="img/brian.png">براين كوقلمان</option> 
+</select></div>
+<br/>
+
+<h3>
+<a class="anchor"><span class="octicon octicon-link"></span></a>Examples</h3>
+<p>Check the provided <a href="example.html">example</a> for a detailed use case.</p>
+
+<h3>
+<a class="anchor"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+<ul>
+  <li><a href="http://jquery.com/">jQuery</a></li>
+  <li><a href="http://github.com/harvesthq/chosen/">Chosen</a></li>
+</ul>
+
+<p>Having trouble with <b>Image Select</b>? Contact <a href="mailto:support@github.com">support@websemantics.ca</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by</p>
+
+<table>
+  <tr>
+    <td>
+      <p style="text-align:center"> <a href="https://github.com/websemantics"><img src="img/websemantics.png"/></a>  <a href="https://github.com/cugels"><img src="img/alterspark.png"/></a></p>
+    </td>
+    <td valign="top"> Support Us?
+      <div>
+          
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>          
+</div>
+    </td>
+  </tr>
+</table>
+        
+<p><small>© 2015 <a href="http://websemantics.ca">WebSemantics, Inc.</a> & <a href="http://alterspark.com">AlterSpark Corp.</a> <br/>Image Select is licensed under the <a href="https://github.com/websemantics/Image-Select/blob/master/LICENSE">MIT license</a>.</small></p>
+
+      </footer>
+    </div>
+    <script src="js/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="js/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+    <script src="dist/ImageSelect.jquery.js" type="text/javascript"></script>
+    <script src="js/codemirror/lib/codemirror.js" type="text/javascript"></script>
+    <script src="js/codemirror/mode/xml/xml.js" type="text/javascript"></script>
+    <script src="js/codemirror/mode/javascript/javascript.js" type="text/javascript">
+    </script>
+    <script type="text/javascript"> 
+
+      $('.xml-code').each(function() {
+
+          var $this = $(this),
+              $code = $this.html();
+
+          $this.empty();
+
+          var myCodeMirror = CodeMirror(this, {
+              value: $code,
+              mode: 'xml',
+              lineWrapping: true,
+              lineNumbers: true,
+              readOnly: true
+          });
+
+      });
+
+      $('.js-code').each(function() {
+
+          var $this = $(this),
+              $code = $this.html();
+
+          $this.empty();
+
+          var myCodeMirror = CodeMirror(this, {
+              value: $code,
+              mode: 'javascript',
+              lineWrapping: true,
+              lineNumbers: true,
+              readOnly: true
+          });
+
+      });
+
+
+      $(".my-select").chosen({width:"100%"});
+
+      $(".my-select-border").chosen({
+        width:"100%",
+        html_template: '<img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
+      });
+
+    </script>
+
+  </body>
+</html>

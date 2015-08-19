@@ -114,15 +114,16 @@ $.fn.extend({
             // _chosen: Object {chosen:Chosen}
             //      Contains the current instance of Chosen class
 
-            var options = getSelectedOptions(chosen.chosen);
+            if(chosen.chosen){ 
+                var options = getSelectedOptions(chosen.chosen);
 
-            for (var i = 0; i < options.length; i++)
-                prependTemplate(options[i].span, 
-                                options[i].option, 
-                                html_template, 
-                                chosen.chosen.is_rtl, 
-                                chosen.chosen.is_multiple);
-           
+                for (var i = 0; i < options.length; i++)
+                    prependTemplate(options[i].span, 
+                                    options[i].option, 
+                                    html_template, 
+                                    chosen.chosen.is_rtl, 
+                                    chosen.chosen.is_multiple);
+            }
         })
 
         $this.on("chosen:showing_dropdown", function showing_dropdown(evt, chosen){

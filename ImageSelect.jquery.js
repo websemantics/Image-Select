@@ -22,6 +22,7 @@
 
         chosen: function(options) {
 
+            if (window.AbstractChosen.browser_is_supported() == false) return this;
             options = options || {};
 
             var html_template = options.html_template || fn_template;

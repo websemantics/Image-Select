@@ -23,6 +23,14 @@ We couldn't find any scripts that had this full functionality, so we developed i
 - Install dependencies, `bower install`
 - Browse to `index.html` or `example.html`
 
+### Via Bower 
+
+`bower install image-select`
+
+To get information about available packages
+
+`bower info image-select`
+
 ## Usage
 
 You only need to add a `data-img-src` attribute to your `<option>` tag.

@@ -64,6 +64,12 @@ All notable changes to this project will be documented in this section.
 #### Changed
 - Fixed few bugs.
 
+# Used by
+
+[PyroCMS Social Field Type](https://github.com/websemantics/social-field_type)
+
+![demo](https://raw.githubusercontent.com/websemantics/Image-Select/master/img/social_field_type.gif)
+
 # Related
 Chosen, http://github.com/harvesthq/chosen
 

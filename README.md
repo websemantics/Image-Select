@@ -70,6 +70,6 @@ All notable changes to this project will be documented in this section.
 
 ![demo](https://raw.githubusercontent.com/websemantics/Image-Select/master/img/social_field_type.gif)
 
-# Related
+## Related
 Chosen, http://github.com/harvesthq/chosen
 

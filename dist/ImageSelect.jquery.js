@@ -43,23 +43,30 @@ function prependTemplate(element, option, template, rtl, multiple, cls){
     // cls*: String (optional)
     //          Css styles class
     
-    if((src = $(option).data('img-src')) != undefined){
+    var src = $(option).data('img-src');
+
+    if(src != undefined && src > ''){
 
         element = $(element);
 
+        text     = $(option).val();
         multiple = (multiple != undefined) ? multiple : true;
         cls      = cls || (multiple ? 'chose-image' : 'chose-image-small');
         cls      = rtl ? cls + ' rtl' : cls;
-        template = template.replace('{url}',src).replace('{class_name}',cls);
+        template = template.replace('{url}',src)
+                           .replace('{class_name}',cls)
+                           .replace('{text}',text);
 
-        // If has an image, remove!
-        element.find('img').remove();
+        // Empty the element
+        element.empty();
         
         // Insert after if ltr or multiple select, otherwise, insert before
-        if(rtl && multiple)
+        if(rtl && multiple){
             element.append(template);
-        else 
+        }
+        else {
             element.prepend(template);
+        }
     }
 }
 
@@ -90,11 +97,9 @@ var fn_chosen = $.fn.chosen;
 $.fn.extend({
  // summery:
  //  Extend the original 'chosen' method to support images
- chosen: function(options) {
+ chosen: function(params) {
 
-    if (window.AbstractChosen && window.AbstractChosen.browser_is_supported() == false) return this;
-    options           = options || {};
-    var html_template = options.html_template || fn_template;
+    params = params || {};
 
     // Original behavior - use function.apply to preserve context
     var ret = fn_chosen.apply(this, arguments);
@@ -115,15 +120,14 @@ $.fn.extend({
             // _chosen: Object {chosen:Chosen}
             //      Contains the current instance of Chosen class
 
-            if(chosen.chosen){ 
-                var options = getSelectedOptions(chosen.chosen);
+            var options       = getSelectedOptions(chosen.chosen);
+            var rtl           = chosen.chosen.is_rtl;
+            var multiple      = chosen.chosen.is_multiple;
+            var html_template = params.html_template || 
+                                (rtl && multiple ? '{text}' + fn_template : fn_template + '{text}');
 
-                for (var i = 0; i < options.length; i++)
-                    prependTemplate(options[i].span, 
-                                    options[i].option, 
-                                    html_template, 
-                                    chosen.chosen.is_rtl, 
-                                    chosen.chosen.is_multiple);
+            for (var i = 0; i < options.length; i++){
+                prependTemplate(options[i].span, options[i].option, html_template, rtl, multiple);
             }
         })
 
@@ -137,8 +141,11 @@ $.fn.extend({
             // chosen: Object {chosen:Chosen}
             //      Contains the current instance of Chosen class
 
-            var chosen   = chosen.chosen;
-            var options  = chosen.form_field.options || [];
+            var chosen        = chosen.chosen;
+            var options       = chosen.form_field.options || [];
+            var rtl           = chosen.is_rtl;
+            var html_template = params.html_template || 
+                                rtl ? '{text}'+fn_template : fn_template+'{text}';
 
             var lis = $(chosen.container).find('.chosen-drop ul li:not(:has(img))')
             
@@ -150,8 +157,7 @@ $.fn.extend({
                 if (idx) /* correct option index */
                    option = options[chosen.results_data[idx].options_index];
 
-                prependTemplate(li, option, html_template, chosen.is_rtl, 
-                                true, 'chose-image-list');
+                prependTemplate(li, option, html_template, rtl, true, 'chose-image-list');
             }
         });
 

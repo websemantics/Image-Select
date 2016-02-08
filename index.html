@@ -125,9 +125,9 @@ have any feedback/improvements.</p>
 <h3>
 <a class="anchor"><span class="octicon octicon-link"></span></a>Custom Style / Markup</h3>
 
-<p><b>Image Select</b> allows the customization of THML markup and styles it uses to insert images. For example, to style the image directly, add your own css classes, or define your own HTML markup which would include the image.</p>
+<p><b>Image Select</b> allows the customization of THML markup and styles it uses to insert images. For example, to style the image directly, add your own css classes, or define your own HTML markup which would include the image and text placement.</p>
 
-<p>The following example adds a black border to the images.</p>
+<p>The following example adds a black border to the images and places the text before the image (similar to <b>rtl</b> mode).</p>
 
  <select multiple="multiple" class="my-select-border">
      <option data-img-src="img/adnan.png">Adnan Sagar</option> 
@@ -141,7 +141,7 @@ have any feedback/improvements.</p>
 
 <div class="js-code" >$(".my-select").chosen({
   width:"100%",
-  html_template: '<img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
+  html_template: '{text} <img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
 });</div>
 <br/>
 <p>Use the <i style="color:red">html_template</i> to write your own markup. Make sure you always include the two place hodlers <i style="color:red">{class_name}</i> and <i style="color:red">{url}</i>, which are being used internally to insert the approperiate class name, and image url for each options element</p>
@@ -256,7 +256,7 @@ have any feedback/improvements.</p>
 
       $(".my-select-border").chosen({
         width:"100%",
-        html_template: '<img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
+        html_template: '{text} <img style="border:3px solid black;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
       });
 
     </script>

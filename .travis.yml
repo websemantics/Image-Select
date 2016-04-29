@@ -1,0 +1,10 @@
+script: bash ./deploy.sh
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g bower
+env:
+  global:
+  - GH_REF: github.com/websemantics/Image-Select.git
+  - secure: mw6HmZyNrhjL965RFtlyfWxiDInvDPV/cLXLjLPz3+amz8VeWEsyfm3Fabjev0bZNLmHhjTP8FyzVMEfv3K+xKGh4dT5XpbWbn/szzBQfkrY+nlY8FAqZfO3GazA+m/0aUaJyvlLw2PtdCr7qVZ+CEEtVLQMa3yC3rKrO3gzzJ6g+XoSSGHgQAnsgotRPGoPr2FCya+W6cVKxfdWMt2KI6sC4vle9lUF/o6LfOXebablrulSJoTezlkys/fpI+YGGr+vYINWyVXdzHjDn0SlXdcTou/TJHB9cPob0PyaSlYJxjUHXhKo5mvEY3+JYYBhHsOR1lMo5JQtRsNz2cSmMZ/kJP34vEMNTkN+SGuey/RtQ7CLdYl+fXzD6pcbcUa6J7SLxCwWlDkueU2gE1KkVC5XrWe3wG6zwkV3ByghWdmEupArMEe/D62gaN4V6c2b5mJQQpSknhUTTiFPwxNj7hiQGQ/OghLXCS4MNMKDl/mj2G7sse7wttA0SgUeUi+Z0hnyZp2aH2bEru4t+MQpzlc0aTUUxrjUXsXGt1EGF0G9+e3QmkpjdM5HoR914cV7yzIY/C5iDtUisfZR8Pl0GmgFE7oc/hnmH3UFgqX4PXo1X4Lh+VRAH0role+SxNBBu193xFBLSBCIolYJT5/Qni9NY8gGct3v9mYRkzOsdEc=

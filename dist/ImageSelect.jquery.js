@@ -1,12 +1,12 @@
 /**
  * Image Select (Version 1.4)
  *
- * Image Select is an extention to the Chosen, a Select Box Enhancer for 
+ * Image Select is an extention to the Chosen, a Select Box Enhancer for
  * jQuery and Prototype, full source at https://github.com/harvesthq/chosen
  *
- * This plugin extension was designed as a humanized UI element for social networking 
- * sites that need to faciliate relations between people. Research shows that people 
- * are extremely sensitvie to photos of others, so we needed to revamp the traditional 
+ * This plugin extension was designed as a humanized UI element for social networking
+ * sites that need to faciliate relations between people. Research shows that people
+ * are extremely sensitvie to photos of others, so we needed to revamp the traditional
  * UI elements to make them more intuitive and human.
  *
  * Hope you find it helpful, and get back if you have any feedback/improvements.
@@ -21,7 +21,7 @@
 (function($) {
 
 // Image template, this can be overridden from the constructor (options.template),
-// must contains {src} placeholder. Ther eare two class names 
+// must contains {src} placeholder. Ther eare two class names
 // 'chose-image' or 'chose-image-small', modifiy in CSS
 var fn_template = '<img class="{class_name}" src="{url}" />';
 
@@ -29,27 +29,27 @@ function prependTemplate(element, option, template, rtl, multiple, cls){
     // summery:
     // This will fill-in the provided template with image source and css class
     // then add it to the element.
-    // 
+    //
     // element: Dom
     //          This is the span node
-    // object: Object, 
+    // object: Object,
     //          The select option to get image url
     // template: String
     //          Html content
-    // rtl: Boolean, 
+    // rtl: Boolean,
     //          Right to Left
     // multiple: Boolean
     //          Used to select the approperiate css class, default to 'true'
     // cls*: String (optional)
     //          Css styles class
-    
+
     var src = $(option).data('img-src');
 
     if(src != undefined && src > ''){
 
         element = $(element);
 
-        text     = $(option).val();
+        text     = $(option).text();
         multiple = (multiple != undefined) ? multiple : true;
         cls      = cls || (multiple ? 'chose-image' : 'chose-image-small');
         cls      = rtl ? cls + ' rtl' : cls;
@@ -59,7 +59,7 @@ function prependTemplate(element, option, template, rtl, multiple, cls){
 
         // Empty the element
         element.empty();
-        
+
         // Insert after if ltr or multiple select, otherwise, insert before
         if(rtl && multiple){
             element.append(template);
@@ -72,12 +72,12 @@ function prependTemplate(element, option, template, rtl, multiple, cls){
 
 function getSelectedOptions(chosen){
     // summery:
-    //      Return a list of selected items/options with the selected 'option' elements 
+    //      Return a list of selected items/options with the selected 'option' elements
     //      and chosen 'span' elements.
-    // 
+    //
     // chosen: Chosen
     //          The Chosen object
-    
+
     var items    = [];
     var options  = $(chosen.form_field).find('option:selected') || [];
     var spans    = (chosen.is_multiple) ? $(chosen.container).find('.chosen-choices span'):
@@ -104,9 +104,9 @@ $.fn.extend({
     // Original behavior - use function.apply to preserve context
     var ret = fn_chosen.apply(this, arguments);
 
-    // Process all select elements to attach event handlers 
+    // Process all select elements to attach event handlers
     // (change, hiding_dropdown and showing_dropdown)
-    
+
     this.each(function() {
 
         var $this = $(this), chosen = $this.data('chosen');
@@ -123,7 +123,7 @@ $.fn.extend({
             var options       = getSelectedOptions(chosen.chosen);
             var rtl           = chosen.chosen.is_rtl;
             var multiple      = chosen.chosen.is_multiple;
-            var html_template = params.html_template || 
+            var html_template = params.html_template ||
                                 (rtl && multiple ? '{text}' + fn_template : fn_template + '{text}');
 
             for (var i = 0; i < options.length; i++){
@@ -133,7 +133,7 @@ $.fn.extend({
 
         $this.on("chosen:showing_dropdown", function showing_dropdown(evt, chosen){
             // summery
-            //    This function is triggered when the chosen instance dropdown list 
+            //    This function is triggered when the chosen instance dropdown list
             //    becomes visible. http://forwebonly.com/jquery-chosen-custom-events-and-how-to-use-them/
             //
             // evt: Event
@@ -144,11 +144,11 @@ $.fn.extend({
             var chosen        = chosen.chosen;
             var options       = chosen.form_field.options || [];
             var rtl           = chosen.is_rtl;
-            var html_template = params.html_template || 
+            var html_template = params.html_template ||
                                 rtl ? '{text}'+fn_template : fn_template+'{text}';
 
             var lis = $(chosen.container).find('.chosen-drop ul li:not(:has(img))')
-            
+
             for(var i = 0; i < lis.length; i++){
                 var li      = lis[i];
                 var option  = $(options[i]);
@@ -167,7 +167,7 @@ $.fn.extend({
             //  This never triggers. TODO: remove.
             $this.trigger('chosen:hiding_dropdown',chosen);
         });
-      
+
         $this.on('chosen:filter', function(evt, chosen){
             // summery;
             //  Support search, pending: https://github.com/harvesthq/chosen/pull/2373

@@ -14,10 +14,12 @@
 
 ![Alt text](http://websemantics.github.io/Image-Select/img/screen-shot.png "Image Select")
 
+> Fresh new designed
+#### Try [Live](http://websemantics.github.io/Image-Select/) or [Examples](http://websemantics.github.io/Image-Select/example.html)
 
 ## Use Scenarios
 
-You can use these plugin extensions for modelling multiple (one-to-many) or single (one-to-one) relations between people. Go to [main page](http://websemantics.github.io/Image-Select/) or try this [example](http://websemantics.github.io/Image-Select/example.html).
+You can use these plugin extensions for modelling multiple (one-to-many) or single (one-to-one) relations between people.
 
 We couldn't find any scripts that had this full functionality, so we developed it ourselves on top of Chosen. Hope you find it helpful, and get back if you have any feedback/improvements.
 

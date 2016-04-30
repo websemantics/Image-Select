@@ -14,7 +14,7 @@
 
 ![Alt text](http://websemantics.github.io/Image-Select/img/screen-shot.png "Image Select")
 
-> Fresh new designed
+> Fresh new design
 #### Try [Live](http://websemantics.github.io/Image-Select/) or [Examples](http://websemantics.github.io/Image-Select/example.html)
 
 ## Use Scenarios

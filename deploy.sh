@@ -16,7 +16,7 @@ cp "$BASEDIR/example.html" "$BUILDDIR"
 cp "$BASEDIR/bower.json" "$BUILDDIR"
 cp "$BASEDIR/.bowerrc" "$BUILDDIR"
 cp  -R "$BASEDIR/img" "$BUILDDIR"
-cp  -R "$BASEDIR/dist" "$BUILDDIR"
+cp  -R "$BASEDIR/src" "$BUILDDIR"
 
 # Create a new Git repo in build folder
 cd "$BUILDDIR"

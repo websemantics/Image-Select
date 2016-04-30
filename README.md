@@ -10,7 +10,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/websemantics/Image-Select/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/network) [![GitHub stars](https://img.shields.io/github/stars/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/stargazers)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/websemantics/Image-Select.svg)](http://isitmaintained.com/project/websemantics/Image-Select "Percentage of issues still open")
 
-> We designed this plugin extension as a humanized UI element for social networking sites that need to faciliate relations between people. Research shows that people are extremely sensitvie to photos of others, so we needed to revamp the traditional UI elements to make them more intuitive and human.
+> We designed this plugin extension as a humanized UI element for social networking sites that need to facilitate relations between people. Research shows that people are extremely sensitive to photos of others, so we needed to revamp the traditional UI elements to make them more intuitive and human.
 
 ![Alt text](http://websemantics.github.io/Image-Select/img/screen-shot.png "Image Select")
 

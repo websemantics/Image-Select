@@ -11,7 +11,8 @@
   ],
   "dependencies": {
     "jquery": "*",
-    "chosen": "*"
+    "chosen": "*",
+    "bulma": "*"
   },
   "devDependencies": {
     "codemirror": "*"

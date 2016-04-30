@@ -1,8 +1,9 @@
 0.1.6
   date: 2016-04-29
   changes:
-  - Bug fixes
+  - New logo and web design
   - Adding Travis support
+  - Bug fixes
 
 0.1.5
   date: 2016-02-08

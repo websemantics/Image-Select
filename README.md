@@ -12,7 +12,7 @@
 
 > We designed this plugin extension as a humanized UI element for social networking sites that need to facilitate relations between people. Research shows that people are extremely sensitive to photos of others, so we needed to revamp the traditional UI elements to make them more intuitive and human.
 
-![Alt text](http://websemantics.github.io/Image-Select/img/screen-shot.png "Image Select")
+![Alt text](http://websemantics.github.io/Image-Select/img/sample-w540@2x.png =540x)
 
 > Fresh new design
 #### Try [Live](http://websemantics.github.io/Image-Select/) or [Examples](http://websemantics.github.io/Image-Select/example.html)

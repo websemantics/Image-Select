@@ -10,9 +10,8 @@
     "**/.*"
   ],
   "dependencies": {
-    "jquery": "*",
-    "chosen": "*",
-    "bulma": "*"
+    "semantic": "*",
+    "chosen": "*"
   },
   "devDependencies": {
     "codemirror": "*"

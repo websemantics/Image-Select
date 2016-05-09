@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="src/codemirror/theme/mdn-like.css">
   <link rel="stylesheet" href="src/chosen/chosen.css">
   <link rel="stylesheet" href="src/ImageSelect.css">
+  <link rel="stylesheet" href="src/Flat.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,300,200,100' rel='stylesheet' type='text/css'>
   <style>
     body, h1, h2, h3, h4, h5, div, p {
@@ -137,11 +138,14 @@
     /* footer styles */
     .ui.footer {
       margin-top: 7rem;
-      margin-bottom: 2rem;
+      padding: 2rem 0 3rem 0;
+      background: #f5f7fa;
     }
 
     .footer img {
       vertical-align: middle;
+      width:66px;
+      height:66px;
     }
 
     .footer h4 a {
@@ -157,13 +161,13 @@
       vertical-align: baseline;
     }
 
-  /* code */
-  code.highlighter-rouge {
-    background: #f5f7fa;
-    color: #ff703d!important;
-    font-weight: normal;
-    padding: 2px;
-  }
+    /* code */
+    code.highlighter-rouge {
+      background: #f5f7fa;
+      color: #ff703d!important;
+      font-weight: normal;
+      padding: 2px;
+    }
 
   </style>
 </head>
@@ -172,7 +176,7 @@
       <div class="ui container">
   		  <div class="ui column grid">
   		    <div class="four wide column logo">
-            <img draggable="false" src="img/logo-color.svg" alt="Image Select">
+            <img draggable="false" src="img/logo.svg" alt="Image Select">
   		    </div>
   		    <div class="twelve wide column">
             <h1 class="ui huge header title">Image Select</h1>
@@ -202,8 +206,6 @@
       <h2 class="ui header title-m">Background Story</h2>
       <p>We designed this plugin extension as a <i>humanized ui</i> element for social networking sites that need to faciliate relations between people. Research shows that people are extremely sensitvie to photos of others, so we needed to revamp the traditional ui elements to make them more intuitive and human.</p>
       <p>You can use these plugin extensions for modelling multiple <code class="highlighter-rouge">one-to-many</code> or single <code class="highlighter-rouge">one-to-one</code> relations between people.</p>
-      <p>We couldn't find any scripts that had this full functionality, so we designed it ourselves. We built it for our Survey tool, <a href="http://www.surveygraph.com/">SurveyGraph</a>, and decided to share it with the community.</p>
-      <p>Hope you find it helpful, and get back if you have any feedback/improvements.</p>
 
       <h2 class="ui header title-m">Multiple Select</h2>
 
@@ -221,7 +223,7 @@
         <option data-img-src="img/rena.png" selected="selected">Rena Cugelman</option>
         <option data-img-src="img/tavis.png" selected="selected">Tavis Lochhead</option>
         <option data-img-src="img/brian.png">Brain Cugelman</option>
-      </select></code>
+</select></code>
 
       <p>As shown above, use <code class="highlighter-rouge">data-img-src</code> attribute to attache images. Finally, enable <i>Image Select</i> by invoking the <code class="highlighter-rouge">chosen</code> method on the select element.</p>
 
@@ -255,7 +257,7 @@
          <option selected="selected" data-img-src="img/rena.png">Rena Cugelman</option>
          <option data-img-src="img/tavis.png">Tavis Lochhead</option>
          <option data-img-src="img/brian.png">Brain Cugelman</option>
-       </select></code>
+</select></code>
 
       <p>Use <code class="highlighter-rouge">data-img-src</code> attribute to attache images.</p>
 
@@ -265,19 +267,20 @@
 
       <p>The following example adds a black border to the images and places the text before the image (similar to <strong>rtl</strong> mode).</p>
 
-       <select multiple="multiple" class="my-select-border">
+      <select multiple="multiple" class="my-select-border">
            <option data-img-src="img/adnan.png">Adnan Sagar</option>
            <option data-img-src="img/rena.png">Rena Cugelman</option>
            <option selected="selected" data-img-src="img/tavis.png">Tavis Lochhead</option>
            <option selected="selected" data-img-src="img/brian.png">Brain Cugelman</option>
-       </select>
-
+      </select>
+      <br/>
+      <br/>
       <p>It simply adds the required css styles directly to the image template</p>
 
       <code class="javascript cm-s-mdn-like">$(".my-select").chosen({
         width:"100%",
         html_template: '{text} <img style="border:3px solid #ff703d;padding:0px;margin-right:4px"  class="{class_name}" src="{url}" />'
-      });</code>
+});</code>
 
       <p>Use the <code class="highlighter-rouge">html_template</code> to write your own markup. Make sure you always include the two place hodlers <code class="highlighter-rouge">{class_name}</code> and <code class="highlighter-rouge">{url}</code>, which are being used internally to insert the approperiate class name, and image url for each options element</p>
 
@@ -299,7 +302,7 @@
         <option data-img-src="img/rena.png" selected="selected">رينا كوقلمان</option>
         <option data-img-src="img/tavis.png">تافس لوكهيد</option>
         <option data-img-src="img/brian.png">براين كوقلمان</option>
-      </select></code>
+</select></code>
 
       <h2 class="ui header title-m">Examples</h2>
 
@@ -313,7 +316,7 @@
     <div class="ui footer">
       <div class="ui one column stackable center aligned page grid">
          <div class="column twelve wide">
-           Built with <img data-preserve-html-node="true" src="img/heart.svg" alt="love" style="width:22px;height:22px;"> by &nbsp;<br/>
+           Built with <img data-preserve-html-node="true" src="img/logo-heart.svg" alt="love"> by &nbsp;<br/>
            <h4><a href="http://websemantics.ca">Web Semantics, Inc.</a></h4>
          </div>
       </div>

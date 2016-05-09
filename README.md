@@ -4,7 +4,7 @@
   | || '_ ` _ \ / _` |/ _` |/ _ \ \___ \ / _ \ |/ _ \/ __| __|
   | || | | | | | (_| | (_| |  __/  ___) |  __/ |  __/ (__| |_
  |___|_| |_| |_|\__,_|\__, |\___| |____/ \___|_|\___|\___|\__|
-                      |___/  v1.6
+                      |___/  v1.7
 ```
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/websemantics/Image-Select/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/network) [![GitHub stars](https://img.shields.io/github/stars/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/stargazers)
@@ -61,5 +61,6 @@ $(".my-select").chosen();
 
 ![demo](https://raw.githubusercontent.com/websemantics/Image-Select/master/img/social_field_type.gif)
 
-## Related
+## Open Source
 Chosen, http://github.com/harvesthq/chosen
+Bragit, http://websemantics.github.io/bragit

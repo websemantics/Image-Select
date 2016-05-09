@@ -1,5 +1,5 @@
 /**
- * Image Select (Version 1.4)
+ * Image Select (Version 1.7)
  *
  * Image Select is an extention to the Chosen, a Select Box Enhancer for
  * jQuery and Prototype, full source at https://github.com/harvesthq/chosen

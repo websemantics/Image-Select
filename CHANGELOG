@@ -1,3 +1,10 @@
+0.1.7
+  date: 2016-05-09
+  changes:
+  - New logo and web design
+  - Use of `github.com/websemantics/bragit` for Github buttons
+  - Separating the new flat styles from Chosen CSS
+
 0.1.6
   date: 2016-04-29
   changes:

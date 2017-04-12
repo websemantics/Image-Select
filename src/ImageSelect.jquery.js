@@ -145,7 +145,7 @@ $.fn.extend({
             var options       = chosen.form_field.options || []
             var rtl           = chosen.is_rtl
             var html_template = params.html_template ||
-                                rtl ? '{text}'+fn_template : fn_template+'{text}'
+                                (rtl ? '{text}'+fn_template : fn_template+'{text}')
 
             var lis = $(chosen.container).find('.chosen-drop ul li:not(:has(img))')
 

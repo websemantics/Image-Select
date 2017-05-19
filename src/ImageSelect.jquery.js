@@ -167,8 +167,14 @@ $.fn.extend({
         $this.on("chosen:ready", function change(e, chosen){
             // summery:
             //  Trigger hide dropdown when ready.
-            //  This never triggers. TODO: remove.
+            //  TODO: remove as it is never triggered!
             $this.trigger('chosen:hiding_dropdown',chosen)
+        })
+
+        $this.on("chosen:updated", function change(e){
+            // summery
+            //  Update after `chosen:updated` event is triggered
+          $this.trigger('chosen:hiding_dropdown',{chosen:chosen})
         })
 
         $this.on('chosen:filter', function(evt, chosen){

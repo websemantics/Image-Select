@@ -1,7 +1,8 @@
 1.9.1
   date: 2017-05-19
   changes:
-  - Fix for issue #42
+  - Updating Chosen dynamically (fix for issue #40)
+  - Fix for issue #42 (credits to @khiav223577)
 
 1.9
   date: 2017-05-19

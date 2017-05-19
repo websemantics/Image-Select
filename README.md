@@ -1,10 +1,17 @@
 ```
-  ___                              ____       _           _   
- |_ _|_ __ ___   __ _  __ _  ___  / ___|  ___| | ___  ___| |_
-  | || '_ ` _ \ / _` |/ _` |/ _ \ \___ \ / _ \ |/ _ \/ __| __|
-  | || | | | | | (_| | (_| |  __/  ___) |  __/ |  __/ (__| |_
- |___|_| |_| |_|\__,_|\__, |\___| |____/ \___|_|\___|\___|\__|
-                      |___/  v1.8
+   ╭────────────────────╮                                                                  
+   │     /\/      ╭──────────╮╭────┬───┬──╮╭──────╮╭─┬────╮╭──────╮                        
+   │         \/\  │  ╭╮  ╭╮  ││           │├────  ││ ╭╮   ││  ──  │                        
+   │  /\/         ╰──╯│  │╰──╯│   ╭╮  ╭╮  ││ ╭╮   ││ ╰╯   ││      │                        
+   │                  │  │    │   ││  ││  ││ ╰╯   │├───   ││  ────┤                        
+   │        Λ    ╭──╮ │  │    ╰───╯╰──╯╰──╯╰───┴──╯╰──────╯╰──────╯                        
+   │       ╱ ╲   │██│ │ ╭──────╮╭──────╮╭───╮╭──────╮╭──────╮ ╭───╮                         
+   │      ╱   ╲  ╰──╯ │ │  ────┤│  ──  ││   ││  ──  ││   ╭──╯╭╯   ╰╮                        
+   │     ╱ \/\/╲      │ │      ││      ││   ││      ││   ╰──╮╰╮   ╭╯                        
+   │    ╱       ╲ ╭──╮│ ├────  ││  ────┤│   ││  ────┤│      │ │ ──┤                         
+   │   ╱         ╲│  ╰╯ ╰──────╯╰──────╯╰───╯╰──────╯╰──────╯ ╰───╯  v2.0                       
+   │  ╱           ╰──────────╯
+   ╰────────────────────╯                                                                  
 ```
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/websemantics/Image-Select/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/network) [![GitHub stars](https://img.shields.io/github/stars/websemantics/Image-Select.svg)](https://github.com/websemantics/Image-Select/stargazers)

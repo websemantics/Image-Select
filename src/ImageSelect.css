@@ -21,28 +21,26 @@
 
 /* Image for Single mode */
 .chose-image-small {
-	width:18px;
-	max-height:18px;
+	width: 16px;
+	max-height: 16px;
 	vertical-align: middle;
-	margin: -3px 0 0 0;
-	padding: 0 3px 0 0;
+	margin: -3px 3px 0 0;
 }
 
 .chose-image-small.rtl {
-	padding: 0 0 0 3px;
+	margin: -3px 0 0 3px;
 }
 
 /* Images appended to the li(s) */
 .chose-image-list {
-	width:18px;
-	max-height:18px;
+	width: 16px;
+	max-height: 16px;
 	vertical-align: middle;
-	margin: -3px 0 0 0;
-	padding: 0 3px 0 0;
+	margin: -3px 3px 0 0;
 }
 
 .chose-image-list.rtl {
-	padding: 0 0 0 3px;
+	margin: -3px 0 0 3px;
 }
 
 /* Grey-out image for Multi mode */

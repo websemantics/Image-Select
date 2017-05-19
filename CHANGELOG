@@ -1,4 +1,4 @@
-1.9.1
+2.0
   date: 2017-05-19
   changes:
   - Updating Chosen dynamically (fix for issue #40)

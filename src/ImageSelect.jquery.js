@@ -178,7 +178,9 @@ $.fn.extend({
         })
 
         // Finally, trigger hiding_dropdown on all select elements
-        $this.trigger('chosen:hiding_dropdown',{chosen:chosen})
+        if(typeof chosen != 'undefined') {
+          $this.trigger('chosen:hiding_dropdown',{chosen:chosen})
+        }
     })
     return $(this);
  }
